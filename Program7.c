@@ -1,0 +1,84 @@
+//Problem Statement : Accept 2 values from user and perform the addition.
+
+// Step 1 : Understand the problem statement.
+// Conclusion : We have to accept 2 integers and perform its addition.
+
+// Write the algorithm
+/*
+    START
+        Accept first number From user and store it into No1
+        Accept first number From user and store it into No2
+        Create one variable to store the result named as Ans
+        Perform Addition of No1 and No2, Store the result in Ans
+        Display the result from Ans to the User
+    STOP
+*/
+
+//Step 3 : Decide the programming language
+// We select C language
+
+// Step 4 : Write the program
+
+#include<stdio.h>
+
+/////////////////////////////////////////////////////////////////////////////////
+//
+// Function Name : Addition
+// Description : It is used to perform the addition of 2 integers
+// Input Arguments : Integer, Integer
+// Output : Integer
+// Author : Swapna Narsinha Tungikar
+// Date : 25/09/2023
+//
+/////////////////////////////////////////////////////////////////////////////////
+
+int Addition(int iNo1, int iNo2)
+{
+    int iSum = 0;           //Variable to store the value of addition
+    iSum = iNo1 + iNo2;
+    return iSum;
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+//
+// Entry point function of an application which performs addition of two integers
+//
+/////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    auto int iValue1 = 0;   //Variable to store first input
+    auto int iValue2 = 0;   //Variable to store second input
+    auto int iAns = 0;      //Variable to store the Result
+
+    printf("Enter first number : \n");
+    scanf("%d", &iValue1);
+
+    printf("Enter second number : \n");
+    scanf("%d", &iValue2);
+
+    iAns = Addition(iValue1, iValue2);  //Function call to perform addition
+
+    printf("Addition is : %d\n",iAns);
+
+    return 0;
+}
+
+//Step 5 : Test the code
+/*
+Test case 1 :
+Input : 10, 11
+Output : 21
+
+Test case 1 :
+Input : -10, 11
+Output : 1
+
+Test case 1 :
+Input : -44, -11
+Output : -55
+
+Test case 1 :
+Input : 10, 0
+Output : 10
+*/
